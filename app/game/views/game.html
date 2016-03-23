@@ -1,0 +1,25 @@
+<div class="panel">
+	<div class="row" ng-show="!boardOptions">
+		<div class="col-sm-2">
+			<input type="button" class="btn btn-primary" ng-click="startNewGame()" value="Create a new game"/>
+		</div>
+		<div class="col-sm-1 text-center"><h4>or</h4></div>
+		<div class="col-sm-4">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="copy a game id here" ng-model="channelName">
+				<span class="input-group-btn">
+					<input type="button" class="btn btn-primary" ng-click="joinToGame()" value="join to a game"/>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="row" ng-show="boardOptions">
+		<div class="col-xs-12">
+			<input type="button" class="btn btn-primary" ng-click="leaveGame()" value="Leave game"/>
+		</div>
+	</div>
+</div>
+
+<div ng-if="boardOptions">
+	<div game-board="boardOptions" class="panel board-container"></div>
+</div>

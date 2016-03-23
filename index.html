@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Angular demo</title>
+	
+	<link type="text/css" href="themes/default/main.css" rel="stylesheet"/>
+</head>
+<body ng-app="main" ng-controller="AppController">
+	
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse" ng-include="'app/main/views/nav.html'"></nav>
+	
+	<!-- Content -->
+	<div class="container ng-view"></div>
+
+	<!-- 3rd parties -->
+	<script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script src="//cdn.webrtc-experiment.com/DataChannel.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular-route.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- App bootstrap file -->
+	<script src="app/app.js"></script>
+	
+	<!-- Modules -->
+	<script src="app/game/services/RTCService.js"></script>
+	<script src="app/game/services/GameService.js"></script>
+	<script src="app/game/services/AmobaGameService.js"></script>	
+	<script src="app/game/directives/game-board/GameBoard.js"></script>
+	<script src="app/game/controllers/GameController.js"></script>
+	
+	<script src="app/main/controllers/AppController.js"></script>
+	<script src="app/main/controllers/ContactController.js"></script>
+	<script src="app/main/directives/CsunyaszoValidator.js"></script>
+
+</body>
+</html>

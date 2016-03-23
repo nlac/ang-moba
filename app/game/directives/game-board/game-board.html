@@ -1,0 +1,15 @@
+<div>
+	<div class="alert alert-info">{{message}}</div>
+
+	<div class="progress">
+		<div class="progress-bar" ng-class="{'progress-bar-striped active':!myTurn && !board.winner}" role="progressbar" style="width:100%"></div>
+	</div>
+
+	<table ng-class="'board ' + (boardEnabled()?'enabled':'disabled')">
+		<tr ng-repeat="row in board.rows">
+			<td ng-repeat="cell in row">
+				<div ng-class="cell.cssClass()" ng-click="step(cell)"></div>
+			</td>
+		</tr>
+	</table>
+</div>
