@@ -7,7 +7,7 @@ Demonstrates several techniques like
 - directive
 - factory
 - form, validation
-- modules by features, module hieralchy
+- modules by features, module hierarchy
 - some WebRTC-ing:)
 
 
