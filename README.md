@@ -1,6 +1,6 @@
 # ang-moba
 
-Angular.js demo let players play gomuku with each other utilizing WebRTC.
+Angular.js demo letting players play gomuku with each other utilizing WebRTC.
 
 Demonstrates several techniques like
 - routing
